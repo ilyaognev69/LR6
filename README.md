@@ -23,7 +23,7 @@
 # Копирование репозитория
 1. Переходим по ссылке: [LR6 репозиторий](https://github.com/Kurtyanik/LR6/).
 2. Нажимаем кнопку "Fork" (это скопирует данный репозиторий в наш личный аккаунт GitHub).
-   ![Fork](https://github.com/ilyaognev69/LR6/assets/fork.png)
+   ![Fork](assets/fork.png)
 
 <a name="client-settings"></a>
 # Настройка клиента Git
