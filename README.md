@@ -34,10 +34,10 @@
 1. Откроем командную строку или терминал (Windows: PowerShell, Linux/Mac: терминал).
 2. Введем следующие команды для настройки имени пользователя и email:
 
-'''bash
+```bash
 git config --global user.name "4314 Огнев И.Д."
 git config --global user.email "ilyaognev69@gmail.com"
-'''
+```
 
 Эти данные будут использоваться для идентификации автора коммитов.
 
@@ -48,9 +48,9 @@ git config --global user.email "ilyaognev69@gmail.com"
 2. Нажмем кнопку "Code" и скопируем ссылку для клонирования (HTTPS или SSH).
 3. В терминале выполним команду:
 
-'''bash
+```bash
 git clone <скопированная_ссылка>
-'''
+```
 
 ![clone](assets/clone.jpg)
 
@@ -63,9 +63,9 @@ git clone <скопированная_ссылка>
 2. Нажмем на "Add file" -> "Upload files" и добавим новый файл (например, test.txt).
 3. В терминале на компьютере выполним команду для подтягивания изменений:
 
-'''bash
+```bash
 git pull
-'''
+```
 
 ![pull](assets/pull.jpg)
 
@@ -76,9 +76,9 @@ git pull
 # Получение историю операций для каждой из веток
 В терминале выполним команду:
 
-'''bash
+```bash
 git log --oneline --all --graph
-'''
+```
 
 ![history](assets/all-history.jpg)
 
@@ -89,9 +89,9 @@ git log --oneline --all --graph
 # Просмотреть последние изменения
 Выполним команду:
 
-'''bash
+```bash
 git log -1
-'''
+```
 
 ![last-history](assets/last-history.jpg)
 
@@ -102,22 +102,22 @@ git log -1
 # Слияние в ветку master с разрешением конфликта
 Переключимся на ветку master:
 
-'''bash
+```bash
 git checkout master
-'''
+```
 
 Выполним команду слияния:
 
-'''bash
+```bash
 git merge <имя_ветки>
-'''
+```
 
 Если возникнут конфликты, откройем конфликтующие файлы в любом редакторе (например, VS Code), разрешим конфликты и зафиксируем изменения:
 
-'''bash
+```bash
 git add .
 git commit
-'''
+```
 
 ![checkout](assets/checkout.jpg)
 
@@ -126,9 +126,9 @@ git commit
 # Удаление побочной ветки после слияния
 После успешного слияния выполним команду для удаления ветки:
 
-'''bash
+```bash
 git branch -d <имя_ветки>
-'''
+```
 
 ![delete](assets/delete.jpg)
 
@@ -138,10 +138,10 @@ git branch -d <имя_ветки>
 1. Внесем изменения в несколько файлов или один файл несколько раз.
 2. Зафиксируйем изменения с комментариями:
 
-'''bash
+```bash
 git add .
 git commit -m "Комментарий к изменению"
-'''
+```
 
 ![editing-n-fixing](assets/editing.jpg)
 
@@ -150,9 +150,9 @@ git commit -m "Комментарий к изменению"
 # Сделать откат коммита
 Выполним откат коммита с помощью команды:
 
-'''bash
+```bash
 git revert <хэш_коммита>
-'''
+```
 
 ![revert](assets/revert.jpg)
 
@@ -163,8 +163,8 @@ git revert <хэш_коммита>
 # Создать ветку для отчёта
 Создадим новую ветку:
 
-'''bash
+```bash
 git checkout -b report
-'''
+```
 
 ![report](assets/checkout_report.jpg)
