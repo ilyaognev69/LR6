@@ -19,6 +19,7 @@
 9. [Сделать изменения и зафиксировать их несколько раз](#editing-n-fixing)
 10. [Сделать откат коммита](#reverting)
 11. [Создать ветку для отчёта](#checkout-branch)
+12. [Получить историю операций в форматированном виде](#take-history)
 
 
 <a name="fork-repository"></a>
@@ -168,3 +169,14 @@ git checkout -b report
 ```
 
 ![report](assets/checkout_report.jpg)
+
+
+<a name="take-history"></a>
+# Получить историю операций в форматированном виде
+Выполним команду:
+
+```bash
+git log --pretty=format:"%h %ad %an %s" --date=short
+```
+
+![take-history](assets/last_one.jpg)
